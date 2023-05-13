@@ -1,0 +1,44 @@
+.hero {
+  color: var(--color-gray-4);
+  &__container-1 {
+    grid-column: 2 /4;
+    grid-row: 1;
+    margin-bottom: 4.2rem;
+    @include respond(low) {
+      max-width: 291px;
+      margin: 0 auto 15px auto;
+    }
+  }
+  &__img {
+    border-radius: 18px;
+    grid-row: 2;
+    grid-column: 1/-1;
+    width: 100%;
+    margin-bottom: 4.2rem;
+  }
+  &__container-2 {
+    grid-column: 2;
+    grid-row: 3;
+    @include respond(low) {
+      margin: 0 auto;
+      max-width: 291px;
+    }
+  }
+
+  &__paragraph {
+    color: var(--color-gray-5);
+    font-size: 1.8rem;
+    margin: 4.2rem 0;
+    @include respond(low) {
+      font-size: 12px;
+    }
+  }
+  @include respond(low) {
+    &-heading--2 {
+      max-width: 227px;
+    }
+    &-heading--1 {
+      font-size: 12px;
+    }
+  }
+}

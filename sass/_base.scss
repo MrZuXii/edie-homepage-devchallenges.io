@@ -1,0 +1,63 @@
+:root {
+  --color-white: #fff;
+  --color-black: #100e1d;
+  --color-gray-1: #f2f2f2;
+  --color-gray-2: #e0e0e0;
+  --color-gray-3: #bdbdbd;
+  --color-gray-4: #828282;
+  --color-gray-5: #4f4f4f;
+  --color-gray-6: #333333;
+  --color-yellow: #f2c94c;
+  --color-blue: #2d9cdb;
+  --color-green: #27ae60;
+  --color-red: #eb5757;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == low {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == medium {
+    @media only screen and (max-width: 47em) {
+      @content;
+    } //750px
+  }
+  @if $breakpoint == high {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    } //1000px
+  }
+  @if $breakpoint == very-high {
+    @media only screen and (min-width: 90em) {
+      @content;
+    } //1440
+  }
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins";
+  color: var(--color-gray-6);
+  @include respond(high) {
+    font-size: 56.25%;
+  }
+  @include respond(medium) {
+    font-size: 50%;
+  }
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}

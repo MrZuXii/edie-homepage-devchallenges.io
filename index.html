@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="img/devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+    <script defer src="js/script.js"></script>
+    <title>Devchallenges</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Edie</h1>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#services">Services</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#ourworks">Our Works</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#clients">Clients</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="navigation__mobile">
+        <span
+          class="material-symbols-outlined navigation__icon navigation__icon--open"
+        >
+          menu
+        </span>
+        <span
+          class="material-symbols-outlined navigation__icon navigation__icon--close"
+        >
+          close
+        </span>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-hero">
+        <div class="hero__container-1">
+          <h4 class="heading-4 heading-4--blue hero-heading--1">
+            Unhappy with your website?
+          </h4>
+          <h2 class="heading-2">We create beautiful and fast web services</h2>
+        </div>
+        <img class="hero__img" src="img/heroImage.jpg" alt="Photo of meeting" />
+        <div class="hero__container-2">
+          <h2 class="heading-2 hero-heading--2">Story, emotion and purpose</h2>
+          <p class="hero__paragraph">
+            We help transform your ideas into real world applications that will
+            outperform your toughest competition and help you achieve your
+            strategic goals in short period of time.
+          </p>
+          <div class="cta">
+            <label class="cta__label" for="hero-email"
+              >Want us to contact you?</label
+            >
+            <div class="cta__box">
+              <input
+                type="email"
+                placeholder="Email"
+                id="hero-email"
+                class="cta__input"
+              />
+              <button class="cta__btn">Join</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-skills container" id="services">
+        <h2 class="heading-3 section-skills--heading">
+          We offer high demand services
+        </h2>
+        <div class="cards">
+          <div class="card">
+            <span class="card__icon card__icon--1 material-symbols-outlined">
+              edit
+            </span>
+            <p class="card__title">UI/UX Design</p>
+            <p class="card__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class="card__btn">Get started</button>
+          </div>
+          <div class="card">
+            <span class="card__icon card__icon--2 material-symbols-outlined">
+              unfold_more
+            </span>
+            <p class="card__title">Front End</p>
+            <p class="card__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class="card__btn">Get started</button>
+          </div>
+          <div class="card">
+            <span class="card__icon card__icon--3 material-symbols-outlined">
+              storage
+            </span>
+            <p class="card__title">Back End</p>
+            <p class="card__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class="card__btn">Get started</button>
+          </div>
+        </div>
+      </section>
+      <section class="section-projects container" id="ourworks">
+        <h2 class="heading-3 section-projects--heading">
+          Good design means good business
+        </h2>
+        <div class="projects">
+          <div class="project project--1">
+            <figure>
+              <img
+                src="img/smarthome.jpg"
+                alt="Screenshot of Smart home dashboard"
+                class="project__img"
+              />
+            </figure>
+            <figcaption>
+              <p class="project__type">Full stack application</p>
+              <p class="project__title">Smart home dashboard</p>
+            </figcaption>
+          </div>
+          <div class="project project--2">
+            <figure>
+              <img
+                src="img/onboard.png"
+                alt="Screenshot of Onboard application"
+                class="project__img"
+              />
+            </figure>
+            <figcaption>
+              <p class="project__type">UX/UI design</p>
+              <p class="project__title">Onboard application</p>
+            </figcaption>
+          </div>
+          <div class="project project--3">
+            <figure>
+              <img
+                src="img/booking.png"
+                alt="Screenshot of Booking system"
+                class="project__img"
+              />
+            </figure>
+
+            <figcaption>
+              <p class="project__type">Mobile application</p>
+              <p class="project__title">Booking system</p>
+            </figcaption>
+          </div>
+          <div class="project project--4">
+            <figure>
+              <img
+                src="img/juice-product.png"
+                alt="Screenshot of Juice product homepage"
+                class="project__img"
+              />
+            </figure>
+            <figcaption>
+              <p class="project__type">Front End applicati on</p>
+              <p class="project__title">Juice product homepage</p>
+            </figcaption>
+          </div>
+          <a href="#" class="projects__link">see more &rarr;</a>
+        </div>
+      </section>
+      <section class="section-team container">
+        <div class="team">
+          <p class="heading-4 heading-4--red">Meet the team</p>
+          <h2 class="heading-3">We are chilled and a laidback team</h2>
+          <p class="team__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="team-imgs">
+          <img
+            class="team__img team__img--1"
+            src="img/person1.png"
+            alt="Photo of a member of team"
+          />
+          <img
+            class="team__img team__img--2"
+            src="img/person2.png"
+            alt="Photo of a member of team"
+          />
+          <img
+            class="team__img team__img--3"
+            src="img/person3.png"
+            alt="Photo of a member of team"
+          />
+        </div>
+      </section>
+      <section class="section-testimonial container" id="clients">
+        <figure class="testimonial">
+          <blockquote class="testimonial-text">
+            “Fast and outstanding resutls. Edie understands their customer’s
+            needs. They have a young and talented team.”
+          </blockquote>
+          <div class="testimonial__box">
+            <img
+              class="testimonial-img"
+              src="img/person4.png"
+              alt="Photo of Carlos Tran"
+            />
+            <div class="testimonial-name">Carlos Tran</div>
+            <div class="testimonial-position">The Decorate Gatsby</div>
+          </div>
+        </figure>
+      </section>
+    </main>
+    <footer class="footer" id="contact">
+      <div class="container footer__container">
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Home</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#services">Services</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#ourworks">Our Works</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#clients">Clients</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__socials">
+          <h2 class="logo">Edie</h2>
+          <img
+            class="footer__icon"
+            src="img/instagram.svg"
+            alt="instagram logo"
+          />
+          <img
+            class="footer__icon"
+            src="img/linkedin.svg"
+            alt="linkedin logo"
+          />
+          <img class="footer__icon" src="img/twitter.svg" alt="twitter logo" />
+        </div>
+        <div class="footer__cta cta">
+          <label class="cta__label" for="footer-email"
+            >Want us to contact you?</label
+          >
+          <div class="cta__box">
+            <input
+              type="email"
+              placeholder="Email"
+              id="footer-email"
+              class="cta__input"
+            />
+            <button class="cta__btn">Join</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          created by
+          <a
+            class="footer__copyright-link"
+            href="https://www.kamilbieniek.pl/"
+            target="_blank"
+            >Kamil Bieniek</a
+          >
+          - devChallenges.io
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

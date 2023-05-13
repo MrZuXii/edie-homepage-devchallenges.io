@@ -1,0 +1,62 @@
+.footer {
+  background-color: var(--color-black);
+  height: 385px;
+  padding: 4.6rem 0 24px 0;
+  color: var(--color-gray-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include respond(low) {
+    height: auto;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    @include respond(low) {
+      flex-direction: column;
+      gap: 64px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: var(--color-gray-1);
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  &__link:hover,
+  &__link:active {
+    font-weight: 600;
+  }
+
+  &__icon {
+    margin-right: 1.1rem;
+    margin-top: 0.5rem;
+  }
+
+  &__copyright {
+    font-family: "Montserrat";
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    @include respond(low) {
+      margin-top: 154px;
+    }
+
+    &-link:link,
+    &-link:visited {
+      color: inherit;
+      font-weight: 700;
+    }
+  }
+}

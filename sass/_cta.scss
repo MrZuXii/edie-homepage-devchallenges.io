@@ -1,0 +1,46 @@
+.cta {
+  width: 35rem;
+
+  @include respond(low) {
+    width: 291px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-gray-1);
+    padding: 0.4rem 0.4rem;
+    border-radius: 1.2rem;
+  }
+  &__label {
+    color: inherit;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.9rem;
+    display: block;
+  }
+  &__input {
+    color: var(--color-gray-5);
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    font-family: inherit;
+    padding-left: 2.1rem;
+
+    &::placeholder {
+      color: var(--color-gray-3);
+    }
+  }
+
+  &__btn {
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--color-blue);
+    border: none;
+    color: var(--color-gray-1);
+    padding: 1.1rem 2.8rem;
+    border-radius: 1.2rem;
+    cursor: pointer;
+  }
+}

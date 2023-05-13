@@ -1,0 +1,9 @@
+.container {
+  max-width: 112rem;
+  margin: 0 auto;
+  width: 94%;
+
+  @include respond(low) {
+    width: auto;
+  }
+}

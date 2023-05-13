@@ -1,0 +1,68 @@
+.header,
+.main {
+  max-width: 133rem;
+  margin: 0 auto;
+  width: 94%;
+}
+
+.main {
+  display: grid;
+  row-gap: 20rem;
+  margin-top: 68px;
+  @include respond(low) {
+    row-gap: 100px;
+  }
+}
+
+.section-hero {
+  display: grid;
+  grid-template-columns: minmax(auto, 22rem) 36.6rem 17.7rem minmax(
+      auto,
+      100rem
+    );
+
+  @include respond(low) {
+    display: block;
+  }
+}
+
+.section-skills {
+  &--heading {
+    max-width: 42rem;
+    @include respond(low) {
+      max-width: 259px;
+      margin-bottom: 92px;
+      margin-left: 3.4rem;
+    }
+  }
+}
+
+.section-projects {
+  margin-bottom: 13rem;
+  &--heading {
+    max-width: 37rem;
+  }
+  @include respond(low) {
+    margin-bottom: 0;
+
+    &--heading {
+      margin: auto;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.section-testimonial {
+  margin-bottom: 20rem;
+  @include respond(low) {
+    margin-bottom: 100px;
+  }
+}
+
+.section-team {
+  display: flex;
+  justify-content: space-between;
+  @include respond(low) {
+    flex-direction: column;
+  }
+}
