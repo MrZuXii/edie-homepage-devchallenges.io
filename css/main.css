@@ -202,12 +202,15 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 6rem;
+  z-index: 9999;
 }
 @media only screen and (max-width: 37.5em) {
   .header {
     padding: 13px 3%;
     position: fixed;
     background-color: #fff;
+    -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     top: 0;
   }
